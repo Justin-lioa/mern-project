@@ -9,7 +9,7 @@ const passport = require("passport");
 require("./config/passport")(passport);
 const cors = require("cors");
 const path = require("path");
-const port = process.env.Port || 8080; //在heroku的PORT是動態的會自動設定
+const port = process.env.PORT || 8080; //在heroku的PORT是動態的會自動設定
 //connect mongoDb
 mongoose
   .connect(process.env.MONGODB_CONNECTION)
